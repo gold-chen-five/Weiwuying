@@ -1,0 +1,68 @@
+﻿<link rel="stylesheet" href="~/css/Matterport.css" />
+<div class="MatterportMain">
+    <img src="~/models/PNG2/logo_1.png" class="logo">
+    <img src="~/models/PNG2/footer_playhouse_1.png" class="footer">
+    <img src="~/models/PNG2/home_selected.png" class="matterport_home">
+    <img src="~/models/PNG2/box_shadow.png" class="box_shadow">
+
+    <div class="translate_container">
+        <img src="~/models/PNG2/ipad_menu_1.png" class="language_menu" />
+        <div class="language_block">
+            <div class="language english" onclick="MatterportPage.Language_Onclick('.english')">
+                <img src="~/models/PNG2/EN_pic1.png" class="translate_mark" />
+                <div>EN</div>
+            </div>
+            <div class="language chinese selected" onclick="MatterportPage.Language_Onclick('.chinese')">
+                <img src="~/models/PNG2/ZH_pic1.png" class="translate_mark" />
+                <div>中文</div>
+            </div>
+            <div class="language japanese" onclick="MatterportPage.Language_Onclick('.japanese')">
+                <img src="~/models/PNG2/JP_pic1.png" class="translate_mark" />
+                <div>日本語</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer_container">
+        <img src="~/models/PNG2/footer_playhouse_pressed.png" class="footer_pressed">
+        <img src="~/models/PNG2/footer_pic1.png" class="footer_pic">
+    </div>
+
+    <div class="matterport_right_menu">
+        <img src="~/models/PNG2/ipad_menu_1.png" class="ipad_menu_1" />
+        <div class="menu_rwd_container">
+            <img src="~/models/PNG2/earth_1.png" class="earth" />
+            <div class="menu-btn">
+                <div class="menu-btn-burger"></div>
+            </div>
+        </div>
+        <div class="word_block menu_sl_1" onclick="MatterportPage.Menu_Onclick('.menu_sl_1')">
+            <div class="chinese_word menu_text_1">榕樹廣場</div>
+            <div class="english_word">Banyan Plaza</div>
+        </div>
+        <div class="word_block  menu_sl_2" onclick="MatterportPage.Menu_Onclick('.menu_sl_2')">
+            <div class="chinese_word menu_text_2">樹冠大廳</div>
+            <div class="english_word">Crown Hall</div>
+        </div>
+        <div class="word_block  menu_sl_3 word_block_selected" onclick="MatterportPage.Menu_Onclick('.menu_sl_3')">
+            <div class="chinese_word menu_text_3">戲劇院</div>
+            <div class="english_word">Playhouse</div>
+        </div>
+        <div class="word_block menu_sl_4" onclick="MatterportPage.Menu_Onclick('.menu_sl_4')">
+            <div class="chinese_word menu_text_4">歌劇院</div>
+            <div class="english_word">Opera House</div>
+        </div>
+        <div class="word_block menu_sl_5" onclick="MatterportPage.Menu_Onclick('.menu_sl_5')">
+            <div class="chinese_word menu_text_5">表演廳</div>
+            <div class="english_word">Recital House</div>
+        </div>
+        <div class="word_block menu_sl_6" onclick="MatterportPage.Menu_Onclick('.menu_sl_6')">
+            <div class="chinese_word menu_text_6">音樂廳</div>
+            <div class="english_word">Concert Hall</div>
+        </div>
+
+    </div>
+    <iframe class="matterport" src='https://my.matterport.com/show/?m=Dg2MUHqNeEs&play=1' frameborder='0' allowfullscreen allow='xr-spatial-tracking'></iframe>
+</div>
+<script src="~/js/page/Matterport.js" asp-append-version="true"></script>
