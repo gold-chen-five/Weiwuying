@@ -1,68 +1,126 @@
 ﻿<link rel="stylesheet" href="~/css/Matterport.css" />
 <div class="MatterportMain">
-    <img src="~/models/PNG2/logo_1.png" class="logo">
-    <img src="~/models/PNG2/footer_playhouse_1.png" class="footer">
+    <img src="~/models/PNG2/logo.svg" class="logo">
+    <img src="~/models/PNG2/footer_banyanplaza_1.svg" class="footer">
     <img src="~/models/PNG2/home_selected.png" class="matterport_home">
     <img src="~/models/PNG2/box_shadow.png" class="box_shadow">
 
+    <!-- 場館介紹 -->
+    <img src="~/models/PNG2/light_bulb_01.svg" class="overview"/>
+    <div class="overview_container">
+        <img src="~/models/Fix/web_message_cancel.png" class="overview_cancel"/>
+        <p class="overviewText"></p>
+    </div>
+
+    <!-- 語言切換 -->
     <div class="translate_container">
         <img src="~/models/PNG2/ipad_menu_1.png" class="language_menu" />
         <div class="language_block">
-            <div class="language english" onclick="MatterportPage.Language_Onclick('.english')">
+            <div class="language english" >
                 <img src="~/models/PNG2/EN_pic1.png" class="translate_mark" />
-                <div>EN</div>
+                <div>English</div>
             </div>
-            <div class="language chinese selected" onclick="MatterportPage.Language_Onclick('.chinese')">
+            <div class="language chinese selected">
                 <img src="~/models/PNG2/ZH_pic1.png" class="translate_mark" />
                 <div>中文</div>
             </div>
-            <div class="language japanese" onclick="MatterportPage.Language_Onclick('.japanese')">
+            <div class="language japanese">
                 <img src="~/models/PNG2/JP_pic1.png" class="translate_mark" />
                 <div>日本語</div>
             </div>
-
         </div>
     </div>
 
+    <!-- 右下底板 -->
     <div class="footer_container">
-        <img src="~/models/PNG2/footer_playhouse_pressed.png" class="footer_pressed">
+        <img src="~/models/PNG2/footer_banyanplaza_pressed.png" class="footer_pressed">
         <img src="~/models/PNG2/footer_pic1.png" class="footer_pic">
     </div>
 
+    <!-- 右邊場館menu -->
     <div class="matterport_right_menu">
         <img src="~/models/PNG2/ipad_menu_1.png" class="ipad_menu_1" />
         <div class="menu_rwd_container">
-            <img src="~/models/PNG2/earth_1.png" class="earth" />
+            <img src="~/models/PNG2/earth_1.svg" class="earth" />
             <div class="menu-btn">
                 <div class="menu-btn-burger"></div>
             </div>
         </div>
-        <div class="word_block menu_sl_1" onclick="MatterportPage.Menu_Onclick('.menu_sl_1')">
+        
+        <div class="word_block menu_sl_1 word_block_selected">
             <div class="chinese_word menu_text_1">榕樹廣場</div>
             <div class="english_word">Banyan Plaza</div>
         </div>
-        <div class="word_block  menu_sl_2" onclick="MatterportPage.Menu_Onclick('.menu_sl_2')">
+        <div class="word_block  menu_sl_2">
             <div class="chinese_word menu_text_2">樹冠大廳</div>
             <div class="english_word">Crown Hall</div>
         </div>
-        <div class="word_block  menu_sl_3 word_block_selected" onclick="MatterportPage.Menu_Onclick('.menu_sl_3')">
+        <div class="word_block  menu_sl_3 ">
             <div class="chinese_word menu_text_3">戲劇院</div>
             <div class="english_word">Playhouse</div>
         </div>
-        <div class="word_block menu_sl_4" onclick="MatterportPage.Menu_Onclick('.menu_sl_4')">
+        <div class="word_block menu_sl_4">
             <div class="chinese_word menu_text_4">歌劇院</div>
             <div class="english_word">Opera House</div>
         </div>
-        <div class="word_block menu_sl_5" onclick="MatterportPage.Menu_Onclick('.menu_sl_5')">
+        <div class="word_block menu_sl_5">
             <div class="chinese_word menu_text_5">表演廳</div>
-            <div class="english_word">Recital House</div>
+            <div class="english_word">Recital Hall</div>
         </div>
-        <div class="word_block menu_sl_6" onclick="MatterportPage.Menu_Onclick('.menu_sl_6')">
+        <div class="word_block menu_sl_6">
             <div class="chinese_word menu_text_6">音樂廳</div>
             <div class="english_word">Concert Hall</div>
-        </div>
-
+        </div> 
     </div>
-    <iframe class="matterport" src='https://my.matterport.com/show/?m=Dg2MUHqNeEs&play=1' frameborder='0' allowfullscreen allow='xr-spatial-tracking'></iframe>
+
+    <!-- 左邊導覽menu -->
+    <div class="left_menu">
+        <div class="left_menu_head">
+            <div class="left_menu_head_text">
+                <p class="left_menu_head_p">參觀導覽路線指引</p>
+            </div>
+            <div class="left_menu_head_body">
+                <div class="line_container">
+                    <img class="line line_A" src="~/models/left_box/A_selected.svg" />
+                    <img class="line line_B" src="~/models/left_box/B_normal.svg" />
+                </div>
+
+                <img class="tour_player" src="~/models/left_box/play_button.svg" />
+                <img class="tour_end" src="~/models/left_box/Cancel.svg" />
+            </div>
+        </div>
+        <div class="left_menu_body">
+            <div class="left_menu_room room_select tour_0">
+                <p class="tour_0_p">歌劇院</p>
+            </div>
+            <div class="left_menu_room tour_1">
+                <p class="tour_1_p">音樂廳</p>
+            </div>
+            <div class="left_menu_room tour_2">
+                <p class="tour_2_p">戲劇院</p>
+            </div>
+            <div class="left_menu_room tour_3">
+                <p class="tour_3_p">表演廳</p>
+            </div>
+            <div class="left_menu_room tour_4">
+                <p class="tour_4_p">樹冠大廳入口</p>
+            </div>
+            <div class="left_menu_room tour_5">
+                <p class="tour_5_p">入口大廳入口</p>
+            </div>
+        </div>
+        <img src="~/models/Fix/web_message_cancel.png" class="left_menu_cancel_phone" />
+    </div>
+
+    <!-- matterport -->
+    <iframe class="matterport" src='https://my.matterport.com/show/?m=SBMPyh4xqVY&play=1' frameborder='0' allowfullscreen allow='xr-spatial-tracking'></iframe>
+
+    <!-- 場館導覽 -->
+    <div class="tourBtn">
+        <img src="~/models/Fix/web_tour_normal.png" class="tour_text"/>
+        <img src="~/models/Fix/web_message_cancel.png" class="tour_cancel"/>
+    </div>
+    <video class="tour" src="~/models/Video/video_tour2/A_0.mp4" muted playsinline></video>
+    @*<img class="tour" src="~/models/Room/A/0_0.jpg"/>*@
 </div>
 <script src="~/js/page/Matterport.js" asp-append-version="true"></script>

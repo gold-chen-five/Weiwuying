@@ -1,27 +1,91 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-<!--
-<script src="~/js/three.js" asp-append-version="true"></script>
-<script type="module" src="~/js/GLTFLoader.js" asp-append-version="true"></script>
+
+<script src="~/js/threeJS/three.min.js" asp-append-version="true"></script>
 <link rel="stylesheet" href="~/css/main.css" />
 
-<button class="btn">button</button>
-
-<script type="module" src="~/js/main.js" asp-append-version="true"></script>
--->
-<script src="~/js/threeJS/three.js" asp-append-version="true"></script>
-@*<script type="module" src="~/js/GLTFLoader.js" asp-append-version="true"></script>
-<script type="module" src="~/js/DRACOLoader.js" asp-append-version="true"></script>*@
-<link rel="stylesheet" href="~/css/main.css" />
-
-<button class="btnEnter">Enter</button>
-<img src="~/models/PNG2/phalanity.gif" class="loading_img"/>
 <canvas class="webgl"></canvas>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<main class="videoMain">
+    <video class="video" src="~/models/Video/WeiWuYing_MainShow_v012_small.mp4" autoplay muted playsinline></video>
+    <section class="videoSection">
+        <img class="mutedSound" src="~/models/Main_PNG/mute_2_V2.png" />
+        <img class="skip" src="~/models/Main_PNG/SKIP.png" />
+    </section>
+
+</main>
+
+<main class="modelBackground">
+    <img src="~/models/Main_PNG/LOGO.png" class="loading_img" />
+    <img src="~/models/Main_PNG/weiwuying.png" class="weiwuyingMark" />
+
+    <img class="clickEnterTag" src="~/models/Main_PNG/cursor.png" />
+
+    <div class="translate_container">
+        <div class="language_block">
+            <div class="language english">
+                <img src="~/models/PNG2/EN_pic1.png" class="translate_mark" />
+                <div>English</div>
+            </div>
+            <div class="language chinese selected">
+                <img src="~/models/PNG2/ZH_pic1.png" class="translate_mark" />
+                <div>中文</div>
+            </div>
+            <div class="language japanese">
+                <img src="~/models/PNG2/JP_pic1.png" class="translate_mark" />
+                <div>日本語</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="matterport_left_menu">
+        <div class="menu_rwd_container">
+            <div class="menu-btn">
+                <div class="menu-btn-burger"></div>
+            </div>
+            <img src="~/models/PNG2/earth_1.png" class="earth" />
+        </div>
+
+        <div class="left_menu_main">
+            <div class="word_block menu_sl_1">
+                <div class="chinese_word menu_text_1">榕樹廣場</div>
+                <div class="english_word">Banyan Plaza</div>
+            </div>
+            <div class="word_block  menu_sl_2">
+                <div class="chinese_word menu_text_2">樹冠大廳</div>
+                <div class="english_word">Crown Hall</div>
+            </div>
+            <div class="word_block  menu_sl_3">
+                <div class="chinese_word menu_text_3">戲劇院</div>
+                <div class="english_word">Playhouse</div>
+            </div>
+            <div class="word_block menu_sl_4">
+                <div class="chinese_word menu_text_4">歌劇院</div>
+                <div class="english_word">Opera House</div>
+            </div>
+            <div class="word_block menu_sl_5">
+                <div class="chinese_word menu_text_5">表演廳</div>
+                <div class="english_word">Recital Hall</div>
+            </div>
+            <div class="word_block menu_sl_6">
+                <div class="chinese_word menu_text_6">音樂廳</div>
+                <div class="english_word">Concert Hall</div>
+            </div>
+        </div>
+    </div>
+
+
+    <img src="~/models/Mainpage_mark/download_normal.svg" class="download" />
+
+    <div class="web_info">
+        <img src="~/models/Fix/web_message_cancel.png" class="web_info_cancel" />
+        <p class="web_info_text">建議使用最新版本 Chrome 或 Firefox 瀏覽器，並設定 1024ｘ768 以上顯示器解析度，手機瀏覽時，請使用 iOS 14 或 Android 12 以上手機系統，以獲得最佳瀏覽體驗。</p>
+    </div>
+
+</main>
+
 
 <script type="module" src="~/js/main.js" asp-append-version="true"></script>
 
-@*<script type="module" src="~/js/JavaScript.js" asp-append-version="true"></script>*@
 

@@ -36,3 +36,4 @@ C:\Users\user\source\repos\Weiwuying\Weiwuying\obj\Debug\netcoreapp3.1\Weiwuying
 C:\Users\user\source\repos\Weiwuying\Weiwuying\obj\Debug\netcoreapp3.1\Weiwuying.genruntimeconfig.cache
 C:\Users\user\source\repos\Weiwuying\Weiwuying\obj\Debug\netcoreapp3.1\Weiwuying.csproj.CopyComplete
 C:\Users\user\source\repos\Weiwuying\Weiwuying\obj\Debug\netcoreapp3.1\Razor\Views\Home\Matterport.cshtml.g.cs
+C:\Users\user\source\repos\Weiwuying\Weiwuying\bin\Debug\netcoreapp3.1\web.config
